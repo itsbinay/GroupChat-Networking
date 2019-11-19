@@ -1,5 +1,6 @@
 # Multiuser Group Chatting Network
-<hr>
+
+> By Binay gurung
 
 A group chatting program that includes a server side and clients. This program is created based on running it on a MAC Terminal.
 
