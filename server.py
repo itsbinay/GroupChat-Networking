@@ -18,6 +18,8 @@ left_index=[]   #All of the thread_index no that has left the chat
 left_index_bool=[]  #Status of announcing left members
 username_list=[]    #All of the username joined in the chat
 
+
+'''---------------------- Helper functions --------------------'''
 def left_chat(this_index):  # Function to identify if "this_index" has left the chat
     global left_index
     for loc in left_index:
@@ -81,7 +83,7 @@ def broadcastLeft(this_index):  # Broadcast that "this_index" user has left the 
             conn.send(message.encode('utf-8'))
         conn_index+=1
 
-
+'''----------------- Main Handlers here --------------------'''
 def broadcast_handler():    # Broadcast_thread Function handler
     # this will be a function/thread that will be running all the time once this program starts
     global message_buffer
